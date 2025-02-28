@@ -1,56 +1,28 @@
 #include "../../include/transaction/smart_contract.h"
 #include <iostream>
-#include <mutex>
-
-std::unordered_map<std::string, std::string> SmartContract::executionCache;
-std::mutex cacheMutex; // Protects shared cache
 
 SmartContract::SmartContract(std::string code) {
     contractCode = code;
 }
 
 std::string SmartContract::getContractType() {
-    if (contractCode.find("MINT") != std::string::npos) {
-        return "Token Minting";
-    } else if (contractCode.find("TRANSFER") != std::string::npos) {
-        return "Token Transfer";
-    } else if (contractCode.find("NFT") != std::string::npos) {
+    if (contractCode.find("NFT") != std::string::npos) {
         return "NFT Minting";
     } else if (contractCode.find("DEFI") != std::string::npos) {
-        return "DeFi Contract";
+        return "DeFi Lending";
+    } else if (contractCode.find("DAO") != std::string::npos) {
+        return "DAO Governance";
     }
     return "Standard Contract";
 }
 
 std::string SmartContract::execute(std::map<std::string, std::string> params) {
-    std::string cacheKey = contractCode + params["sender"] + params["receiver"];
-
-    {
-        std::lock_guard<std::mutex> lock(cacheMutex);
-        if (executionCache.find(cacheKey) != executionCache.end()) {
-            return executionCache[cacheKey]; // Return cached result
-        }
+    if (contractCode == "NFT Mint") {
+        return "NFT Minted: " + params["nft_name"];
+    } else if (contractCode == "DEFI Lend") {
+        return "Loan Issued: " + params["amount"];
+    } else if (contractCode == "DAO Vote") {
+        return "Vote Recorded for Proposal ID: " + params["proposal_id"];
     }
-
-    std::string result;
-    if (contractCode == "LOCK UNTIL 2025") {
-        result = "Funds locked until 2025";
-    } else if (getContractType() == "Token Minting") {
-        result = "Token Minted: " + params["token_name"];
-    } else if (getContractType() == "Token Transfer") {
-        result = "Tokens Transferred from " + params["sender"] + " to " + params["receiver"];
-    } else if (getContractType() == "NFT Minting") {
-        result = "NFT Minted: " + params["nft_name"];
-    } else if (getContractType() == "DeFi Contract") {
-        result = "DeFi Contract Executed: " + params["contract_name"];
-    } else {
-        result = "Smart Contract Executed Successfully";
-    }
-
-    {
-        std::lock_guard<std::mutex> lock(cacheMutex);
-        executionCache[cacheKey] = result; // Store in cache
-    }
-
-    return result;
+    return "Smart Contract Executed Successfully";
 }

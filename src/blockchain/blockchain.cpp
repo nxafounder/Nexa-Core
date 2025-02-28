@@ -18,3 +18,4 @@ void Blockchain::printChain() {
         std::cout << "Data: " << block.data << "\n\n";
     }
 }
+

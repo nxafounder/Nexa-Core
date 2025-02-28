@@ -6,10 +6,11 @@
 
 class Blockchain {
 public:
-    std::vector<Block> chain;
     Blockchain();
     void addBlock(std::string data);
-    void printChain();
+    void printChain(); // ✅ Add this function
+private:
+    std::vector<Block> chain;
 };
 
 #endif

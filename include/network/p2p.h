@@ -6,5 +6,6 @@
 
 void startP2PServer();
 void connectToPeers();
+void requestBatchBlocks(int startBlock, int batchSize);
 
 #endif
