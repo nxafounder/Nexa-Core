@@ -124,6 +124,8 @@ nexa-core: CMakeFiles/nexa-core.dir/src/main.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/build.make
+nexa-core: /usr/lib/x86_64-linux-gnu/libssl.so
+nexa-core: /usr/lib/x86_64-linux-gnu/libcrypto.so
 nexa-core: CMakeFiles/nexa-core.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable nexa-core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nexa-core.dir/link.txt --verbose=$(VERBOSE)

@@ -1,8 +1,8 @@
-#include "block.h"
+#include "../../include/blockchain/block.h"
 #include <iostream>
 #include <sstream>
 #include <ctime>
-#include <openssl/sha.h>
+#include <openssl/evp.h>
 
 Block::Block(int idx, std::string prevHash, std::string blkData) 
     : index(idx), previousHash(prevHash), data(blkData) {
@@ -15,14 +15,18 @@ std::string Block::calculateHash() {
     std::stringstream ss;
     ss << index << previousHash << data << timestamp << nonce;
 
-    unsigned char hash[SHA256_DIGEST_LENGTH];
-    SHA256_CTX sha256;
-    SHA256_Init(&sha256);
-    SHA256_Update(&sha256, ss.str().c_str(), ss.str().size());
-    SHA256_Final(hash, &sha256);
+    EVP_MD_CTX* ctx = EVP_MD_CTX_new();
+    const EVP_MD* md = EVP_sha256();
+    unsigned char hash[EVP_MAX_MD_SIZE];
+    unsigned int hash_len;
+
+    EVP_DigestInit_ex(ctx, md, nullptr);
+    EVP_DigestUpdate(ctx, ss.str().c_str(), ss.str().size());
+    EVP_DigestFinal_ex(ctx, hash, &hash_len);
+    EVP_MD_CTX_free(ctx);
 
     std::stringstream hashString;
-    for (int i = 0; i < SHA256_DIGEST_LENGTH; i++)
+    for (unsigned int i = 0; i < hash_len; i++)
         hashString << std::hex << (int)hash[i];
 
     return hashString.str();
