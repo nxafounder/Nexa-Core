@@ -81,12 +81,12 @@ clean: CMakeFiles/nexa-core.dir/clean
 CMakeFiles/nexa-core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target nexa-core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target nexa-core"
 .PHONY : CMakeFiles/nexa-core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nexa-core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Nexa-Core/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Nexa-Core/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nexa-core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/Nexa-Core/build/CMakeFiles 0
 .PHONY : CMakeFiles/nexa-core.dir/rule

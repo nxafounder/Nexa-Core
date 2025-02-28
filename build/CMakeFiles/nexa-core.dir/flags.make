@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/root/Nexa-Core/include
+CXX_INCLUDES = -I/root/Nexa-Core/include -I/root/Nexa-Core/Crow/include
 
 CXX_FLAGS = -std=gnu++17
 

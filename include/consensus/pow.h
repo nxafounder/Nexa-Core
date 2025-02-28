@@ -1,7 +1,7 @@
 #ifndef POW_H
 #define POW_H
 
-#include "blockchain/block.h"
+const int MINING_DIFFICULTY = 4; // Adjust difficulty level
 
 void mineBlock(Block &block);
 

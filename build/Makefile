@@ -129,6 +129,54 @@ nexa-core/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/build
 .PHONY : nexa-core/fast
 
+src/api/api_server.o: src/api/api_server.cpp.o
+.PHONY : src/api/api_server.o
+
+# target to build an object file
+src/api/api_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o
+.PHONY : src/api/api_server.cpp.o
+
+src/api/api_server.i: src/api/api_server.cpp.i
+.PHONY : src/api/api_server.i
+
+# target to preprocess a source file
+src/api/api_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/api_server.cpp.i
+.PHONY : src/api/api_server.cpp.i
+
+src/api/api_server.s: src/api/api_server.cpp.s
+.PHONY : src/api/api_server.s
+
+# target to generate assembly for a file
+src/api/api_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/api_server.cpp.s
+.PHONY : src/api/api_server.cpp.s
+
+src/api/explorer.o: src/api/explorer.cpp.o
+.PHONY : src/api/explorer.o
+
+# target to build an object file
+src/api/explorer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o
+.PHONY : src/api/explorer.cpp.o
+
+src/api/explorer.i: src/api/explorer.cpp.i
+.PHONY : src/api/explorer.i
+
+# target to preprocess a source file
+src/api/explorer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/explorer.cpp.i
+.PHONY : src/api/explorer.cpp.i
+
+src/api/explorer.s: src/api/explorer.cpp.s
+.PHONY : src/api/explorer.s
+
+# target to generate assembly for a file
+src/api/explorer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/api/explorer.cpp.s
+.PHONY : src/api/explorer.cpp.s
+
 src/blockchain/block.o: src/blockchain/block.cpp.o
 .PHONY : src/blockchain/block.o
 
@@ -201,29 +249,77 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/network/p2p.o: src/network/p2p.cpp.o
-.PHONY : src/network/p2p.o
+src/transaction/smart_contract.o: src/transaction/smart_contract.cpp.o
+.PHONY : src/transaction/smart_contract.o
 
 # target to build an object file
-src/network/p2p.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o
-.PHONY : src/network/p2p.cpp.o
+src/transaction/smart_contract.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o
+.PHONY : src/transaction/smart_contract.cpp.o
 
-src/network/p2p.i: src/network/p2p.cpp.i
-.PHONY : src/network/p2p.i
+src/transaction/smart_contract.i: src/transaction/smart_contract.cpp.i
+.PHONY : src/transaction/smart_contract.i
 
 # target to preprocess a source file
-src/network/p2p.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.i
-.PHONY : src/network/p2p.cpp.i
+src/transaction/smart_contract.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.i
+.PHONY : src/transaction/smart_contract.cpp.i
 
-src/network/p2p.s: src/network/p2p.cpp.s
-.PHONY : src/network/p2p.s
+src/transaction/smart_contract.s: src/transaction/smart_contract.cpp.s
+.PHONY : src/transaction/smart_contract.s
 
 # target to generate assembly for a file
-src/network/p2p.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.s
-.PHONY : src/network/p2p.cpp.s
+src/transaction/smart_contract.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.s
+.PHONY : src/transaction/smart_contract.cpp.s
+
+src/transaction/transaction.o: src/transaction/transaction.cpp.o
+.PHONY : src/transaction/transaction.o
+
+# target to build an object file
+src/transaction/transaction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o
+.PHONY : src/transaction/transaction.cpp.o
+
+src/transaction/transaction.i: src/transaction/transaction.cpp.i
+.PHONY : src/transaction/transaction.i
+
+# target to preprocess a source file
+src/transaction/transaction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.i
+.PHONY : src/transaction/transaction.cpp.i
+
+src/transaction/transaction.s: src/transaction/transaction.cpp.s
+.PHONY : src/transaction/transaction.s
+
+# target to generate assembly for a file
+src/transaction/transaction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.s
+.PHONY : src/transaction/transaction.cpp.s
+
+src/wallet/wallet.o: src/wallet/wallet.cpp.o
+.PHONY : src/wallet/wallet.o
+
+# target to build an object file
+src/wallet/wallet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o
+.PHONY : src/wallet/wallet.cpp.o
+
+src/wallet/wallet.i: src/wallet/wallet.cpp.i
+.PHONY : src/wallet/wallet.i
+
+# target to preprocess a source file
+src/wallet/wallet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.i
+.PHONY : src/wallet/wallet.cpp.i
+
+src/wallet/wallet.s: src/wallet/wallet.cpp.s
+.PHONY : src/wallet/wallet.s
+
+# target to generate assembly for a file
+src/wallet/wallet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.s
+.PHONY : src/wallet/wallet.cpp.s
 
 # Help Target
 help:
@@ -234,6 +330,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nexa-core"
+	@echo "... src/api/api_server.o"
+	@echo "... src/api/api_server.i"
+	@echo "... src/api/api_server.s"
+	@echo "... src/api/explorer.o"
+	@echo "... src/api/explorer.i"
+	@echo "... src/api/explorer.s"
 	@echo "... src/blockchain/block.o"
 	@echo "... src/blockchain/block.i"
 	@echo "... src/blockchain/block.s"
@@ -243,9 +345,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/network/p2p.o"
-	@echo "... src/network/p2p.i"
-	@echo "... src/network/p2p.s"
+	@echo "... src/transaction/smart_contract.o"
+	@echo "... src/transaction/smart_contract.i"
+	@echo "... src/transaction/smart_contract.s"
+	@echo "... src/transaction/transaction.o"
+	@echo "... src/transaction/transaction.i"
+	@echo "... src/transaction/transaction.s"
+	@echo "... src/wallet/wallet.o"
+	@echo "... src/wallet/wallet.i"
+	@echo "... src/wallet/wallet.s"
 .PHONY : help
 
 

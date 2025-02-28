@@ -111,26 +111,86 @@ CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/blockchain/block.cpp -o CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.s
 
-CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o: CMakeFiles/nexa-core.dir/flags.make
-CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o: /root/Nexa-Core/src/network/p2p.cpp
-CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o -MF CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o.d -o CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o -c /root/Nexa-Core/src/network/p2p.cpp
+CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o: CMakeFiles/nexa-core.dir/flags.make
+CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o: /root/Nexa-Core/src/transaction/transaction.cpp
+CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o -MF CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o.d -o CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o -c /root/Nexa-Core/src/transaction/transaction.cpp
 
-CMakeFiles/nexa-core.dir/src/network/p2p.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/network/p2p.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/network/p2p.cpp > CMakeFiles/nexa-core.dir/src/network/p2p.cpp.i
+CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/transaction/transaction.cpp > CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.i
 
-CMakeFiles/nexa-core.dir/src/network/p2p.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/network/p2p.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/network/p2p.cpp -o CMakeFiles/nexa-core.dir/src/network/p2p.cpp.s
+CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/transaction/transaction.cpp -o CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.s
+
+CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o: CMakeFiles/nexa-core.dir/flags.make
+CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o: /root/Nexa-Core/src/transaction/smart_contract.cpp
+CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o -MF CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o.d -o CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o -c /root/Nexa-Core/src/transaction/smart_contract.cpp
+
+CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/transaction/smart_contract.cpp > CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.i
+
+CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/transaction/smart_contract.cpp -o CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.s
+
+CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o: CMakeFiles/nexa-core.dir/flags.make
+CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o: /root/Nexa-Core/src/wallet/wallet.cpp
+CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o -MF CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o.d -o CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o -c /root/Nexa-Core/src/wallet/wallet.cpp
+
+CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/wallet/wallet.cpp > CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.i
+
+CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/wallet/wallet.cpp -o CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.s
+
+CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o: CMakeFiles/nexa-core.dir/flags.make
+CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o: /root/Nexa-Core/src/api/explorer.cpp
+CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o -MF CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o.d -o CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o -c /root/Nexa-Core/src/api/explorer.cpp
+
+CMakeFiles/nexa-core.dir/src/api/explorer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/api/explorer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/api/explorer.cpp > CMakeFiles/nexa-core.dir/src/api/explorer.cpp.i
+
+CMakeFiles/nexa-core.dir/src/api/explorer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/api/explorer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/api/explorer.cpp -o CMakeFiles/nexa-core.dir/src/api/explorer.cpp.s
+
+CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o: CMakeFiles/nexa-core.dir/flags.make
+CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o: /root/Nexa-Core/src/api/api_server.cpp
+CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o: CMakeFiles/nexa-core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o -MF CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o.d -o CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o -c /root/Nexa-Core/src/api/api_server.cpp
+
+CMakeFiles/nexa-core.dir/src/api/api_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/nexa-core.dir/src/api/api_server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Nexa-Core/src/api/api_server.cpp > CMakeFiles/nexa-core.dir/src/api/api_server.cpp.i
+
+CMakeFiles/nexa-core.dir/src/api/api_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/nexa-core.dir/src/api/api_server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Nexa-Core/src/api/api_server.cpp -o CMakeFiles/nexa-core.dir/src/api/api_server.cpp.s
 
 # Object files for target nexa-core
 nexa__core_OBJECTS = \
 "CMakeFiles/nexa-core.dir/src/main.cpp.o" \
 "CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o" \
 "CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.o" \
-"CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o"
+"CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o" \
+"CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o" \
+"CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o" \
+"CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o" \
+"CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o"
 
 # External object files for target nexa-core
 nexa__core_EXTERNAL_OBJECTS =
@@ -138,12 +198,14 @@ nexa__core_EXTERNAL_OBJECTS =
 nexa-core: CMakeFiles/nexa-core.dir/src/main.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.o
-nexa-core: CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o
+nexa-core: CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o
+nexa-core: CMakeFiles/nexa-core.dir/src/transaction/smart_contract.cpp.o
+nexa-core: CMakeFiles/nexa-core.dir/src/wallet/wallet.cpp.o
+nexa-core: CMakeFiles/nexa-core.dir/src/api/explorer.cpp.o
+nexa-core: CMakeFiles/nexa-core.dir/src/api/api_server.cpp.o
 nexa-core: CMakeFiles/nexa-core.dir/build.make
-nexa-core: /usr/lib/x86_64-linux-gnu/libssl.so
-nexa-core: /usr/lib/x86_64-linux-gnu/libcrypto.so
 nexa-core: CMakeFiles/nexa-core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable nexa-core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Nexa-Core/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable nexa-core"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nexa-core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
