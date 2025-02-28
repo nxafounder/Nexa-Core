@@ -1,5 +1,9 @@
 #include "../../include/transaction/smart_contract.h"
 #include <iostream>
+#include <mutex>
+
+std::unordered_map<std::string, std::string> SmartContract::executionCache;
+std::mutex cacheMutex; // Protects shared cache
 
 SmartContract::SmartContract(std::string code) {
     contractCode = code;
@@ -19,16 +23,34 @@ std::string SmartContract::getContractType() {
 }
 
 std::string SmartContract::execute(std::map<std::string, std::string> params) {
-    if (contractCode == "LOCK UNTIL 2025") {
-        return "Funds locked until 2025";
-    } else if (getContractType() == "Token Minting") {
-        return "Token Minted: " + params["token_name"];
-    } else if (getContractType() == "Token Transfer") {
-        return "Tokens Transferred from " + params["sender"] + " to " + params["receiver"];
-    } else if (getContractType() == "NFT Minting") {
-        return "NFT Minted: " + params["nft_name"];
-    } else if (getContractType() == "DeFi Contract") {
-        return "DeFi Contract Executed: " + params["contract_name"];
+    std::string cacheKey = contractCode + params["sender"] + params["receiver"];
+
+    {
+        std::lock_guard<std::mutex> lock(cacheMutex);
+        if (executionCache.find(cacheKey) != executionCache.end()) {
+            return executionCache[cacheKey]; // Return cached result
+        }
     }
-    return "Smart Contract Executed Successfully";
+
+    std::string result;
+    if (contractCode == "LOCK UNTIL 2025") {
+        result = "Funds locked until 2025";
+    } else if (getContractType() == "Token Minting") {
+        result = "Token Minted: " + params["token_name"];
+    } else if (getContractType() == "Token Transfer") {
+        result = "Tokens Transferred from " + params["sender"] + " to " + params["receiver"];
+    } else if (getContractType() == "NFT Minting") {
+        result = "NFT Minted: " + params["nft_name"];
+    } else if (getContractType() == "DeFi Contract") {
+        result = "DeFi Contract Executed: " + params["contract_name"];
+    } else {
+        result = "Smart Contract Executed Successfully";
+    }
+
+    {
+        std::lock_guard<std::mutex> lock(cacheMutex);
+        executionCache[cacheKey] = result; // Store in cache
+    }
+
+    return result;
 }

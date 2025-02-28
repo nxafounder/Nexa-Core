@@ -162,5 +162,9 @@ CMakeFiles/nexa-core.dir/src/main.cpp.o: /root/Nexa-Core/src/main.cpp \
  /usr/include/c++/12/bits/stl_map.h /usr/include/c++/12/tuple \
  /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/bits/stl_multimap.h \
- /usr/include/c++/12/bits/erase_if.h \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/unordered_map \
+ /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/unordered_map.h \
  /root/Nexa-Core/include/transaction/smart_contract.h

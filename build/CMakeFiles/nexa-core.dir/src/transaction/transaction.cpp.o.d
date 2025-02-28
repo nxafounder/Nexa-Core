@@ -123,7 +123,11 @@ CMakeFiles/nexa-core.dir/src/transaction/transaction.cpp.o: \
  /usr/include/c++/12/bits/stl_map.h /usr/include/c++/12/tuple \
  /usr/include/c++/12/bits/uses_allocator.h \
  /usr/include/c++/12/bits/stl_multimap.h \
- /usr/include/c++/12/bits/erase_if.h /usr/include/openssl/evp.h \
+ /usr/include/c++/12/bits/erase_if.h /usr/include/c++/12/unordered_map \
+ /usr/include/c++/12/bits/hashtable.h \
+ /usr/include/c++/12/bits/hashtable_policy.h \
+ /usr/include/c++/12/bits/enable_special_members.h \
+ /usr/include/c++/12/bits/unordered_map.h /usr/include/openssl/evp.h \
  /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
