@@ -1,1 +1,1 @@
-/usr/bin/c++ "CMakeFiles/nexa-core.dir/src/main.cpp.o" "CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o" "CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.o" -o nexa-core  /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 
+/usr/bin/c++ "CMakeFiles/nexa-core.dir/src/main.cpp.o" "CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o" "CMakeFiles/nexa-core.dir/src/blockchain/block.cpp.o" "CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o" -o nexa-core  /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so 

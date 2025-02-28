@@ -14,6 +14,7 @@ add_executable(nexa-core
     src/main.cpp
     src/blockchain/blockchain.cpp
     src/blockchain/block.cpp
+    src/network/p2p.cpp
 )
 
 target_link_libraries(nexa-core PRIVATE OpenSSL::SSL OpenSSL::Crypto)

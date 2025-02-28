@@ -117,4 +117,5 @@ CMakeFiles/nexa-core.dir/src/main.cpp.o: /root/Nexa-Core/src/main.cpp \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/12/bits/charconv.h \
- /usr/include/c++/12/bits/basic_string.tcc
+ /usr/include/c++/12/bits/basic_string.tcc \
+ /root/Nexa-Core/include/network/p2p.h

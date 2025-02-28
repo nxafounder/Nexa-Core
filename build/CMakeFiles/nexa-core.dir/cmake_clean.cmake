@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nexa-core.dir/src/blockchain/blockchain.cpp.o.d"
   "CMakeFiles/nexa-core.dir/src/main.cpp.o"
   "CMakeFiles/nexa-core.dir/src/main.cpp.o.d"
+  "CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o"
+  "CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o.d"
   "nexa-core"
   "nexa-core.pdb"
 )

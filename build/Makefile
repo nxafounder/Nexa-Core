@@ -201,6 +201,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/network/p2p.o: src/network/p2p.cpp.o
+.PHONY : src/network/p2p.o
+
+# target to build an object file
+src/network/p2p.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.o
+.PHONY : src/network/p2p.cpp.o
+
+src/network/p2p.i: src/network/p2p.cpp.i
+.PHONY : src/network/p2p.i
+
+# target to preprocess a source file
+src/network/p2p.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.i
+.PHONY : src/network/p2p.cpp.i
+
+src/network/p2p.s: src/network/p2p.cpp.s
+.PHONY : src/network/p2p.s
+
+# target to generate assembly for a file
+src/network/p2p.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nexa-core.dir/build.make CMakeFiles/nexa-core.dir/src/network/p2p.cpp.s
+.PHONY : src/network/p2p.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/network/p2p.o"
+	@echo "... src/network/p2p.i"
+	@echo "... src/network/p2p.s"
 .PHONY : help
 
 
