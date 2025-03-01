@@ -1,28 +1,42 @@
 #include "../../include/transaction/smart_contract.h"
 #include <iostream>
+#include <unordered_map>
+#include <mutex>
+
+std::unordered_map<std::string, std::string> executionCache;
+std::mutex cacheMutex;
 
 SmartContract::SmartContract(std::string code) {
     contractCode = code;
 }
 
 std::string SmartContract::getContractType() {
-    if (contractCode.find("NFT") != std::string::npos) {
-        return "NFT Minting";
-    } else if (contractCode.find("DEFI") != std::string::npos) {
-        return "DeFi Lending";
-    } else if (contractCode.find("DAO") != std::string::npos) {
-        return "DAO Governance";
+    if (contractCode.find("EVM") != std::string::npos) {
+        return "EVM Smart Contract";
     }
     return "Standard Contract";
 }
 
 std::string SmartContract::execute(std::map<std::string, std::string> params) {
-    if (contractCode == "NFT Mint") {
-        return "NFT Minted: " + params["nft_name"];
-    } else if (contractCode == "DEFI Lend") {
-        return "Loan Issued: " + params["amount"];
-    } else if (contractCode == "DAO Vote") {
-        return "Vote Recorded for Proposal ID: " + params["proposal_id"];
+    std::string cacheKey = contractCode + params["bytecode"];
+
+    {
+        std::lock_guard<std::mutex> lock(cacheMutex);
+        if (executionCache.find(cacheKey) != executionCache.end()) {
+            return executionCache[cacheKey]; // ✅ Return cached execution result
+        }
     }
-    return "Smart Contract Executed Successfully";
+
+    std::string result = executeEVM(params["bytecode"]);
+
+    {
+        std::lock_guard<std::mutex> lock(cacheMutex);
+        executionCache[cacheKey] = result; // ✅ Store execution in cache
+    }
+
+    return result; // ✅ Fix: Ensure function always returns a value
+}
+
+std::string SmartContract::executeEVM(std::string bytecode) {
+    return "EVM Execution Completed: " + bytecode.substr(0, 10) + "..."; // Simulating EVM execution
 }

@@ -9,6 +9,7 @@ public:
     SmartContract(std::string code);
     std::string execute(std::map<std::string, std::string> params);
     std::string getContractType();
+    std::string executeEVM(std::string bytecode);
 private:
     std::string contractCode;
 };

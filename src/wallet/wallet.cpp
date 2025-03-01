@@ -1,10 +1,6 @@
 #include "../../include/wallet/wallet.h"
 #include "../../include/transaction/transaction.h"
-#include <openssl/aes.h>
-#include <openssl/rand.h>
 #include <iostream>
-#include <sstream>
-#include <vector>
 
 Wallet::Wallet() {
     privateKey = "random_private_key"; // Temporary key for testing
@@ -12,9 +8,7 @@ Wallet::Wallet() {
 }
 
 std::string Wallet::generateAddress() {
-    std::stringstream ss;
-    ss << "NXA_" << privateKey;
-    return ss.str();
+    return "NXA_" + privateKey;
 }
 
 void Wallet::sendTransaction(std::string receiver, double amount) {
